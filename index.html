@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deteksi Bahasa Isyarat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Deteksi Bahasa Isyarat Menggunakan Kamera</h1>
+  </header>
+
+  <main>
+    <div class="camera-container">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="output"></canvas>
+    </div>
+    <div id="result">
+      <h2>Hasil Deteksi:</h2>
+      <p id="gesture">Menunggu...</p>
+    </div>
+    <button id="startBtn">Mulai Kamera</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Web Deteksi Bahasa Isyarat | Dibuat oleh Maksum</p>
+  </footer>
+
+  <!-- Library MediaPipe -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <Script src="https://teachablemachine.withgoogle.com/models/eWa0VMsAk/"></Script>
+  <script src="script.js"></script>
+</body>
+</html>
